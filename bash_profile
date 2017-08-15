@@ -56,4 +56,4 @@ done
 
 # Bash Prompt
 export PROMPT_COLOR=34
-export PS1=' \[\033[4;1;${PROMPT_COLOR}m\]\w\[\033[0m\]$(unalias git; __git_ps1 " $(git config --get user.email) (%s)") \n$ '
+export PS1=' \[\033[4;1;${PROMPT_COLOR}m\]\w\[\033[0m\]$(__git_ps1 " $(git config --get user.email) (%s)") \n$ '
